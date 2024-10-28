@@ -1,6 +1,7 @@
-import { generalStarter } from "../animations/general/index";
+import { useGeneral } from "../animations/general/index";
 import { homePageStarter } from "../animations/home/index";
 import { aboutPageStarter } from "../animations/about/index";
+import { eventsPageStarter } from "../animations/events";
 
 // Initializes page-specific animations based on the data-page-name attribute.
 // Ensure the main page wrapper has a unique class with data-page-name attribute
@@ -17,12 +18,13 @@ export function initPageRouter() {
   const pageName = pageWrapper.getAttribute("data-page-name");
 
   // Initialize general animations first
-  generalStarter();
+  useGeneral();
 
   // Mapping of page names to their respective starter functions
   const pageStarters = {
     home: homePageStarter,
     about: aboutPageStarter,
+    events: eventsPageStarter,
     // Add additional page starters here
   };
 
