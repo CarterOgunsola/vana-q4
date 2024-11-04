@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@pixi/interaction": "^6.5.10",
-    "gsap": "npm:@gsap/shockingly"
+    "gsap": "npm:@gsap/shockingly",
+    "lenis": "^1.1.14"
   }
 }
