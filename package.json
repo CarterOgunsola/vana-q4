@@ -13,6 +13,6 @@
   },
   "dependencies": {
     "@pixi/interaction": "^6.5.10",
-    "gsap": "npm:@gsap/shockingly@^3.12.5"
+    "gsap": "npm:@gsap/shockingly"
   }
 }
