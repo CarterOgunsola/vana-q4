@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import { Pane } from "tweakpane";
 
-const enableTweakpane = true;
+const enableTweakpane = false;
 
 export const dotEffect = (canvasSelector = "[data-canvas]") => {
   const element = document.querySelector(canvasSelector);
@@ -25,10 +25,10 @@ export const dotEffect = (canvasSelector = "[data-canvas]") => {
     dots: {
       size: 800,
       spacing: 50,
-      colors: { normal: "#17031B", hover: "#1B041F" },
+      colors: { normal: "#1B041F", hover: "#296B29" },
     },
     mouse: {
-      influence: 10,
+      influence: 40,
       pushStrength: 10,
       speedLimit: 15,
       showTrails: false,
